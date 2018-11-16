@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss']
 })
-export class HomePage {}
+export class HomePage {
+
+  // tslint:disable-next-line:no-inferrable-types
+  myVariable: string = 'the force is with me!';
+
+  updateMyValue() {
+    this.myVariable = 'Now the force is even stronger!';
+  }
+}
